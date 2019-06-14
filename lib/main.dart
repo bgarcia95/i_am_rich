@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
+//The main function is the starting point for all Flutter Apps
 //home is where everything starts
 //add a comma after each bracket or parenthesis to format the code
 void main() {
   runApp(
     MaterialApp(
-      home: Center(
-        child: Text('Hello World!'),
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: Text('I am Rich'),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/diamond.png'),
+          ),
+        ),
       ),
     ),
   );
